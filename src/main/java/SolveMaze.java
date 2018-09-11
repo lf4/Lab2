@@ -36,6 +36,7 @@ public class SolveMaze {
          */
         for (int step = 0; step < 1000; step++) {
             while (!maze.isFinished()) {
+                maze.turnLeft();
                 while (!maze.canMove()) {
                     maze.turnRight();
                 }
